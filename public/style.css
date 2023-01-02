@@ -225,7 +225,6 @@ section{
    text-align: center; 
    padding:2rem;
    margin-bottom: 4rem;
-   user-select: none;
 }
 
 .courses .slide img{
@@ -245,12 +244,13 @@ section{
    color:var(--light-white);
 }
 
-.swiper-pagination-bullet{
-   background-color: var(--white);
+.swiperPagination-bullet{
+   background-color: red;
+   font-size: larger;
 }
  
-.swiper-pagination-bullet-active{
-   background-color: var(--green);
+.swiperPagination-bullet-active{
+   background-color: gold;
 }
 
 .teachers .slide{
@@ -261,9 +261,10 @@ section{
 }
 
 .teachers .slide img{
+   object-fit: cover !important;
    height: 55rem;
    width: 100%;
-   object-fit: cover;
+   
    border-radius: .5rem;
 }
 

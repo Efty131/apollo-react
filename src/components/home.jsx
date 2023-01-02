@@ -1,16 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Swiper from 'swiper';
 
 import Header from './header';
 import HomeImg from '../images/home-img.svg';
 import AboutImg from '../images/about-img.svg';
-import CourseImg1 from '../images/course-1.svg';
-import CourseImg2 from '../images/course-2.svg';
-import CourseImg3 from '../images/course-3.svg';
-import CourseImg4 from '../images/course-4.svg';
-import CourseImg5 from '../images/course-5.svg';
-import CourseImg6 from '../images/course-6.svg';
+import Courses from '../components/courses';
+import Footer from '../components/footer';
+import Pic1 from '../images/pic-1.png';
+import Pic2 from '../images/pic-2.png';
+import Pic3 from '../images/pic-3.png';
+import Pic4 from '../images/pic-4.png';
+import Pic5 from '../images/pic-5.png';
+import Pic6 from '../images/pic-6.png';
 
-const home = () => {
+const Home = () => {
+
+   useEffect(() => {
+      new Swiper('.reviews-slider', {
+        spaceBetween: 20,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: '.swiperPagination',
+          clickable: true,
+        },
+        breakpoints: {
+          540: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    }, []);
   return (
     <div>
         <Header />
@@ -90,49 +117,116 @@ const home = () => {
    </div>
 
 </section>
-      {/* courses section start */}
-      <section className="courses" id="courses">
+      <Courses />
+      {/* Review section start */}
+      <section className="reviews" id="reviews">
 
-   <h1 className="heading">our <span>courses</span></h1>
+   <h1 className="heading"> student's <span>reviews</span></h1>
 
-   <div className="swiper course-slider">
+   <div className="swiper reviews-slider">
 
       <div className="swiper-wrapper">
 
          <div className="swiper-slide slide">
-            <img src={CourseImg1} alt="img" />
-            <h3>web development</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic1} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div className="swiper-slide slide">
-            <img src={CourseImg2} alt="img" />
-            <h3>digital marketing</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic2} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div className="swiper-slide slide">
-            <img src={CourseImg3} alt="img" />
-            <h3>science and biology</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic3} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div className="swiper-slide slide">
-            <img src={CourseImg4} alt="img" />
-            <h3>graphic design</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic4} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div className="swiper-slide slide">
-            <img src={CourseImg5} alt="img" />
-            <h3>teaching</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic5} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
          <div className="swiper-slide slide">
-            <img src={CourseImg6} alt="img" />
-            <h3>engineering</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+            <div className="user">
+               <img src={Pic6} alt="img" />
+               <div className="user-info">
+                  <h3>john deo</h3>
+                  <div className="stars">
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star"></i>
+                     <i className="fas fa-star-half-alt"></i>
+                  </div>
+               </div>
+            </div>
          </div>
 
       </div>
@@ -142,9 +236,9 @@ const home = () => {
    </div>
 
 </section>
-
+      <Footer />
     </div>
   )
 };
 
-export default home;
+export default Home;

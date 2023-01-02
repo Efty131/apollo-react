@@ -1,16 +1,16 @@
-let menuBtn = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.navbar');
+// let menuBtn = document.querySelector('#menu-btn');
+// let navbar = document.querySelector('.navbar');
+// // what the heck. ai code react a ke. aida common js code
+// menuBtn.onclick = () =>{
+//    menuBtn.classList.toggle('fa-times');
+//    navbar.classList.toggle('active');
+//    console.log("Hi");
+// }
 
-menuBtn.onclick = () =>{
-   menuBtn.classList.toggle('fa-times');
-   navbar.classList.toggle('active');
-   console.log("Hi");
-}
-
-window.onscroll = () =>{
-   menuBtn.classList.remove('fa-times');
-   navbar.classList.remove('active');
-}
+// window.onscroll = () =>{
+//    menuBtn.classList.remove('fa-times');
+//    navbar.classList.remove('active');
+// }
 
 var swiper = new Swiper(".course-slider", {
    spaceBetween: 20,

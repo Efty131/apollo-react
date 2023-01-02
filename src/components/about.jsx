@@ -1,11 +1,14 @@
 import React from 'react';
+
 import Header from './header';
+import Footer from './footer';
+import AboutImg from '../images/about-img.svg';
 
 const about = () => {
-  return (
-    <div>
-      <Header />
-       <section className="count">
+   return (
+      <div>
+         <Header /> <br></br> <br></br> <br></br> <br></br> <br></br>
+         <section className="count">
 
 <div className="box-container">
 
@@ -44,8 +47,27 @@ const about = () => {
 </div>
 
 </section>
+   {/* about section start */}
+   <section className="about" id="about">
+
+<div className="row">
+
+   <div className="image">
+      <img src={AboutImg} alt="img" />
+   </div>
+
+   <div className="content">
+      <h3>why choose us?</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quibusdam magni error, aut enim rerum?</p>
+      <a href="#contact" className="btn">contact us</a>
+   </div>
+
+</div>
+
+</section>
+         <Footer />
       </div>
-  )
+   )
 };
 
 export default about;
