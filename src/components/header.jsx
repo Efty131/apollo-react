@@ -28,6 +28,7 @@ const Header = () => {
 
         <nav className="navbar" ref={navbarRef}>
           <Link to={"/"}>Home</Link>
+          <Link to={"/notes"}>Notes</Link>
           <Link to={"/about"}>About</Link>
           <Link to={"/courses"}>Courses</Link>
           <Link to={"/teachers"}>Teachers</Link>
