@@ -117,9 +117,9 @@ const Home = () => {
    </div>
 
 </section>
-      <Courses />
+      {/* <Courses /> */}
       {/* Review section start */}
-      <section className="reviews" id="reviews">
+      {/* <section className="reviews" id="reviews">
 
    <h1 className="heading"> student's <span>reviews</span></h1>
 
@@ -235,7 +235,7 @@ const Home = () => {
 
    </div>
 
-</section>
+</section> */}
       <Footer />
     </div>
   )

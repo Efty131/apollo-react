@@ -5,6 +5,8 @@ import Courses from './components/courses';
 import About from './components/about';
 import Reviews from './components/Reviews';
 import Notes from './components/notes';
+import ModelTest from './components/modelTest';
+import Transformation from './components/transformation';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/notes" element={<Notes />}></Route>
+          <Route path="/transformation" element={<Transformation />}></Route>
+          <Route path="/modelTest" element={<ModelTest />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
           <Route path="/contact" element={<Contact />}></Route>

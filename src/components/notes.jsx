@@ -1,30 +1,22 @@
-import { useRef, useEffect } from "react";
-import CloudPdfViewer from '@cloudpdf/viewer';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Footer from './footer';
-import Header from './header';
-// import Transformation from '../images/Transformation.pdf';
-
-const Notes = () => {
-
-    const viewer = useRef(null);
-  useEffect(() => {
-    CloudPdfViewer(
-      {
-        documentId: "ca69e2e4-b38b-4352-ae1d-81b8fc4e6f93",
-        darkMode: true
-      },
-      viewer.current
-    ).then((instance) => {});
-  }, []);
-
-    return (
-        <div>
-            <Header />
-            <div className="viewer" ref={viewer}></div>
-            <Footer />
-        </div>
-    )
+const notes = () => {
+  return (
+    <div style={containerStyles}>
+      <Link to={"/transformation"} className="link">Transformation</Link>
+      <Link to={"/modelTest"} className="link">Final Model Test Solution</Link>
+    </div>
+  )
 }
 
-export default Notes;
+const containerStyles = {
+  display: 'flex',
+  flexDirection: 'column',
+  backgroundColor: '#000',
+  justifyContent: 'center',
+  alignItems: 'center',
+  minHeight: '100vh'
+}
+
+export default notes;
