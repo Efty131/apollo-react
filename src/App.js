@@ -7,6 +7,7 @@ import Reviews from './components/Reviews';
 import Notes from './components/notes';
 import ModelTest from './components/modelTest';
 import Transformation from './components/transformation';
+import Tense from './components/tense';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/notes" element={<Notes />}></Route>
           <Route path="/transformation" element={<Transformation />}></Route>
           <Route path="/modelTest" element={<ModelTest />}></Route>
+          <Route path="/tense" element={<Tense />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
           <Route path="/contact" element={<Contact />}></Route>

@@ -6,10 +6,10 @@ const notes = () => {
     <div style={containerStyles}>
       <Link to={"/transformation"} className="link">Transformation</Link>
       <Link to={"/modelTest"} className="link">Final Model Test Solution</Link>
+      <Link to={"/tense"} className="link">Tense</Link>
     </div>
   )
 }
-
 const containerStyles = {
   display: 'flex',
   flexDirection: 'column',
