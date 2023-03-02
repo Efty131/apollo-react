@@ -7,6 +7,7 @@ const notes = () => {
       <Link to={"/transformation"} className="link">Transformation</Link>
       <Link to={"/modelTest"} className="link">Final Model Test Solution</Link>
       <Link to={"/tense"} className="link">Tense</Link>
+      <Link to={"/wh"} className="link">Wh Questions</Link>
     </div>
   )
 }

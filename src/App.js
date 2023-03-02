@@ -8,6 +8,7 @@ import Notes from './components/notes';
 import ModelTest from './components/modelTest';
 import Transformation from './components/transformation';
 import Tense from './components/tense';
+import Wh from './components/wh';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/modelTest" element={<ModelTest />}></Route>
           <Route path="/tense" element={<Tense />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/wh" element={<Wh />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/courses" element={<Courses />}></Route>
