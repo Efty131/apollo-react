@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { RiPhoneLine } from 'react-icons/ri';
 
 const Header = () => {
   const menuBtnRef = useRef(null);
@@ -30,10 +31,8 @@ const Header = () => {
           <Link to={"/"}>Home</Link>
           <Link to={"/notes"}>Notes</Link>
           <Link to={"/about"}>About</Link>
-          <Link to={"/courses"}>Courses</Link>
-          <Link to={"/teachers"}>Teachers</Link>
-          <Link to={"/reviews"}>Reviews</Link>
-          <Link to={"/contact"}>Contact</Link>
+          <Link to={`tel:${+8801771234567}`}><RiPhoneLine className='phoneIcon' /> +8801771234567</Link>
+         
         </nav>
 
         <div id="menu-btn" className="fas fa-bars" ref={menuBtnRef}></div>
